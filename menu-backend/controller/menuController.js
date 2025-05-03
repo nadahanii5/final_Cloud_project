@@ -15,7 +15,7 @@ const getMealsByCategory = async (req, res) => {
   try {
     const meals = await menuService.getMealsByCategory(req.params.category);
     if (meals.length === 0)
-      return errorResponse(res, "Category not found", 404);
+      return errorResponse(res, "", 404);
     successResponse(res, meals);
   } catch (error) {
     errorResponse(res, error.message);
