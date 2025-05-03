@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  backend:
+    build: ./menu-backend    
+    ports:
+      - "3030:5000"              
+
+  frontend:
+    build: ./menu-frontend/01firstproject/menu     
+    ports:
+      - "80:80"
+    restart: always
