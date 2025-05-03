@@ -1,4 +1,3 @@
-import React from 'react';
 import { useCart } from '../Context/CartContext';
 import { Link } from 'react-router-dom';
 
