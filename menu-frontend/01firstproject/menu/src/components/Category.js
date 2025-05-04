@@ -3,7 +3,7 @@ import { Row, Col } from 'react-bootstrap'
 import { Roll } from 'react-awesome-reveal';
 const Category = ({ filterbyCategory, allCategory }) => {
 
-    //to filter by category
+    
     const onFilter = (cat) => {
         filterbyCategory(cat)
     }
