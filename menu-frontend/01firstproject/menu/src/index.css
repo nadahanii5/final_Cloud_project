@@ -1,4 +1,4 @@
-.color-body {
+..color-body {
   background-color: #F8F8F8;
   height: 100vh;
 }
@@ -23,20 +23,26 @@
   color: black;
   font-family: Almarai;
   font-size: 18px;
-  letter-spacing: 0;
+  letter-spacing: 1px; /* خليت في مسافة بين الحروف */
   line-height: 24px;
-}
-.btn:hover {
-  color: black;
-  font-family: Almarai;
-  font-size: 18px;
-  font-weight: bold;
-  letter-spacing: 0;
-  line-height: 24px;
-  border-radius: 11px;
+  padding: 12px 40px; /* زودت المسافة الأفقية */
   border: none;
+  border-radius: 8px;
   background-color: #B45B35;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  display: inline-block;
+  text-align: center;
 }
+
+
+
+.btn:hover {
+  color: white;
+  background-color: #8c3e24;
+  font-weight: bold;
+}
+
 .img-item {
   height: 180px;
   width: 252px;
@@ -70,16 +76,41 @@
 }
 .btn-search {
   color: #B45B35;
-  border-radius: 3px solid #B45B35;
+  border: 3px solid #B45B35;
   border-radius: 8px;
   background-color: white;
+  padding: 8px 16px;
+  transition: all 0.3s ease;
 }
 .btn-search:hover {
   color: white;
-  border-radius: 3px solid white;
   background-color: #B45B35;
-  border-radius: 8px;
+  border: 3px solid white;
 }
 .brand-color {
   color: #B45B35;
+}
+.home-button {
+  margin-top: 20px;
+}
+.home-button {
+  margin-top: 20px;
+  padding: 8px 20px; /* تصغير حجم الزرار */
+  display: block; /* علشان ياخد سطر لوحده */
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 16px; /* خط أصغر شوية */
+}
+.navbar-buttons {
+  display: flex;
+  gap: 10px; /* مسافة بين كل زرار والتاني */
+  align-items: center;
+}
+.navbar {
+  background-color: #1e1e1e; /* أو أي لون غامق */
+  padding: 20px 20px; /* قللي المسافة فوق وتحت */
+  height: 120px; /* بدلاً من 120px مثلاً */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
